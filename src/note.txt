@@ -1,0 +1,4 @@
+stripe=>used for payment process
+  Element-used to wrape the payment component
+  cardElement->used to generage card element 
+  ClientSecret-> generate the special stripe secret which allows us to charge a customer

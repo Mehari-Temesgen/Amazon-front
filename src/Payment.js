@@ -12,6 +12,7 @@ function Payment() {
   const [{ bascket, user }, dispatch] = useStateValue();
   const getBasketTotal = (bascket) =>
     bascket?.reduce((amount, item) => item.price + amount, 0);
+  const value = numeral(getBasketTotal(bascket)).format("$0,0.00");
   const stripe = useStripe();
   const elements = useElements();
   const navigate = useNavigate();
